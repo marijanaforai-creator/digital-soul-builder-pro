@@ -11,12 +11,12 @@ export const BLOCK_DEFINITIONS = [
     type: "hero",
     label: "Hero sekcija",
     category: "Sekcije",
-    description: "Glavni naslov, opis, dugmad i istaknuta slika.",
+    description: "Glavni naslov, opis, dugmad i istaknuta slika",
     defaultProps: {
       eyebrow: "DIGITALNI ALATI · JEDNOSTAVNI SISTEMI",
       title: "Tvoja ideja, tvoj glas, tvoj sistem",
       description:
-        "Mesto za digitalne proizvode, pametne alate i sisteme koji ti pomažu da organizuješ ideje i razvijaš online posao.",
+        "Mesto za digitalne proizvode, pametne alate i sisteme koji ti pomažu da organizuješ ideje i razvijaš online posao",
       primaryButtonText: "Istraži biblioteku",
       primaryButtonUrl: "#biblioteka",
       secondaryButtonText: "Blog",

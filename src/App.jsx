@@ -1259,7 +1259,7 @@ export default function App() {
             </div>
           </div>
         </main>
-
+const [isPreview, setIsPreview] = useState(false);
         <aside className="right-panel">
           <div className="inspector-heading">
             <div>

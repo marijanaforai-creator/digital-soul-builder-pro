@@ -1504,3 +1504,8 @@ const [isPreview, setIsPreview] = useState(false);
     </div>
   );
 }
+{!isPreview && (
+  <div className="editor-toolbar">
+    {/* tvoja postojeća dugmad za dodavanje i uređivanje blokova */}
+  </div>
+)}

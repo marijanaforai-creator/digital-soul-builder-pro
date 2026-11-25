@@ -24,18 +24,24 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Install dependencies and build
-        working-directory: src
         run: |
-          npm ci
+          if [ -f "src/package.json" ]; then
+            cd src
+          fi
+          if [ -f "package-lock.json" ]; then
+            npm ci
+          else
+            npm install
+          fi
           npx vite build --base=/digital-soul-builder-pro/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: src/dist
+          path: ${{ hashFiles('src/package.json') != '' && 'src/dist' || 'dist' }}
 
   deploy:
     needs: build

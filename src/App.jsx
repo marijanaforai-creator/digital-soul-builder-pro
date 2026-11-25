@@ -1377,6 +1377,11 @@ const [isPreview, setIsPreview] = useState(false);
                 >
                   <option value='"DM Sans", sans-serif'>DM Sans</option>
                   <option value='"Playfair Display", Georgia, serif'>Playfair Display</option>
+                  <option value="'DM Sans', sans-serif">DM Sans</option>
+<option value="'Playfair Display', Georgia, serif">Playfair Display</option>
+<option value="'Cormorant Garamond', Georgia, serif">Cormorant Garamond</option>
+<option value="'Plus Jakarta Sans', sans-serif">Plus Jakarta Sans</option>
+<option value="Georgia, serif">Georgia</option>
                   <option value="Georgia, serif">Georgia</option>
                 </select>
               </div>

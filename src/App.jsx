@@ -616,7 +616,106 @@ export default function App() {
             </div>
           </div>
         );
+case "aboutEditorial":
+        return (
+          <div
+            style={{
+              ...boxStyle,
+              position: "relative",
+              overflow: "hidden",
+              minHeight: 540,
+              display: "flex",
+              alignItems: "center",
+              backgroundColor: style.backgroundColor || "#787577",
+              backgroundImage: props.imageUrl ? `url("${props.imageUrl}")` : "none",
+              backgroundSize: "cover",
+              backgroundPosition: "right center",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="builder-block-inner about-editorial-block"
+          >
+            <div
+              style={{
+                position: "relative",
+                zIndex: 2,
+                maxWidth: 640,
+                paddingLeft: 56,
+                paddingRight: 28,
+              }}
+            >
+              {props.eyebrow && (
+                <div
+                  style={{
+                    color: style.accentColor || "#e6d8f2",
+                    fontSize: 12,
+                    fontWeight: 600,
+                    letterSpacing: "0.14em",
+                    textTransform: "uppercase",
+                    marginBottom: 18,
+                  }}
+                >
+                  {props.eyebrow}
+                </div>
+              )}
 
+              <h1
+                style={{
+                  color: style.textColor || "#ffffff",
+                  fontSize: style.fontSize ? `${style.fontSize}px` : "56px",
+                  lineHeight: 1.06,
+                  fontWeight: 500,
+                  margin: "0 0 24px 0",
+                }}
+              >
+                {props.titleMain}{" "}
+                {props.titleAccent && (
+                  <em
+                    style={{
+                      fontStyle: "italic",
+                      color: style.accentColor || "#e6d8f2",
+                    }}
+                  >
+                    {props.titleAccent}
+                  </em>
+                )}
+              </h1>
+
+              {props.subtitle && (
+                <p
+                  style={{
+                    color: style.textColor || "#ffffff",
+                    opacity: 0.9,
+                    fontSize: 17,
+                    lineHeight: 1.55,
+                    margin: "0 0 32px 0",
+                    maxWidth: 560,
+                  }}
+                >
+                  {props.subtitle}
+                </p>
+              )}
+
+              {props.buttonText && (
+                <a
+                  href={props.buttonHref || "#"}
+                  onClick={(e) => e.preventDefault()}
+                  style={{
+                    display: "inline-block",
+                    backgroundColor: style.buttonBg || "#e6d8f2",
+                    color: style.buttonTextColor || "#231f20",
+                    padding: "14px 30px",
+                    borderRadius: "999px",
+                    fontWeight: 500,
+                    fontSize: 15,
+                    textDecoration: "none",
+                  }}
+                >
+                  {props.buttonText}
+                </a>
+              )}
+            </div>
+          </div>
+        );
       case "hero":
         return (
           <div style={boxStyle} className="builder-block-inner hero-block">

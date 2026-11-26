@@ -8,6 +8,32 @@ export const BLOCK_CATEGORIES = [
 
 export const BLOCK_DEFINITIONS = [
   {
+    {
+    type: "aboutEditorial",
+    label: "O meni (Editorial)",
+    category: "Sekcije",
+    description: "Editorial O meni sekcija sa celom pozadinom, slikom desno i lavanda akcentima",
+    defaultProps: {
+      eyebrow: "ĆAO, JA SAM MARIJANA",
+      titleMain: "Pomažem ti da izađeš iz rutine i izgradiš biznis koji je",
+      titleAccent: "zaista tvoj",
+      subtitle:
+        "Godinama sam radila po tuđim pravilima dok nisam počela da gradim svoje digitalne proizvode i sisteme. Danas ti pokazujem kako da napraviš jednostavan, održiv online posao po svojoj meri.",
+      buttonText: "Pročitaj moju priču",
+      buttonHref: "#kontakt",
+      imageUrl: "",
+      imageAlt: "Marijana portret",
+    },
+    defaultStyle: {
+      backgroundColor: "#787577",
+      textColor: "#ffffff",
+      accentColor: "#e6d8f2",
+      buttonBg: "#e6d8f2",
+      buttonTextColor: "#231f20",
+      paddingTop: 96,
+      paddingBottom: 96,
+    },
+  },
     type: "hero",
     label: "Hero sekcija",
     category: "Sekcije",
